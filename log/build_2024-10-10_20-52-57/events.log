@@ -1,0 +1,343 @@
+[0.000000] (-) TimerEvent: {}
+[0.001271] (-) JobUnselected: {'identifier': 'md_teleop'}
+[0.001563] (md_controller) JobQueued: {'identifier': 'md_controller', 'dependencies': OrderedDict()}
+[0.001678] (md_controller) JobStarted: {'identifier': 'md_controller'}
+[0.019958] (md_controller) JobProgress: {'identifier': 'md_controller', 'progress': 'cmake'}
+[0.020452] (md_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/retina/md_ws/src/MD_controller_ROS2/md_controller', '-DCMAKE_INSTALL_PREFIX=/home/retina/md_ws/src/MD_controller_ROS2/install/md_controller'], 'cwd': '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller', 'env': OrderedDict([('SSH_CLIENT', '192.168.0.3 55158 22'), ('USER', 'retina'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/retina'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/retina/md_ws/src'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.41.101'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/retina/.oh-my-zsh'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('FLEET_WORKSPACE_ID', '2bkp7i1p42v5l0438hk5'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/retina/md_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'retina'), ('WINDOWID', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'Jetbrains.Fleet'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('INTELLIJ_TERMINAL_COMMAND_BLOCKS', '1'), ('ALACRITTY_WINDOW_ID', '0'), ('PWD', '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller'), ('SSH_CONNECTION', '192.168.0.3 55158 192.168.0.108 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099517] (-) TimerEvent: {}
+[0.189387] (md_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199687] (-) TimerEvent: {}
+[0.300366] (-) TimerEvent: {}
+[0.328134] (md_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.345221] (md_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400557] (-) TimerEvent: {}
+[0.501222] (-) TimerEvent: {}
+[0.522446] (md_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.536548] (md_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.537579] (md_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.538835] (md_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.545891] (md_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601403] (-) TimerEvent: {}
+[0.702085] (-) TimerEvent: {}
+[0.702690] (md_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.720432] (md_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.721139] (md_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.721408] (md_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.729968] (md_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.802264] (-) TimerEvent: {}
+[0.903181] (-) TimerEvent: {}
+[1.003819] (-) TimerEvent: {}
+[1.066200] (md_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.103967] (-) TimerEvent: {}
+[1.204982] (-) TimerEvent: {}
+[1.251405] (md_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.305153] (-) TimerEvent: {}
+[1.346201] (md_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.356159] (md_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.374135] (md_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.399824] (md_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.405217] (-) TimerEvent: {}
+[1.435038] (md_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.505431] (-) TimerEvent: {}
+[1.525171] (md_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.530557] (md_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.605599] (-) TimerEvent: {}
+[1.685091] (md_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.705696] (-) TimerEvent: {}
+[1.741273] (md_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.805913] (-) TimerEvent: {}
+[1.814001] (md_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.831473] (md_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.906106] (-) TimerEvent: {}
+[2.006835] (-) TimerEvent: {}
+[2.015510] (md_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.016294] (md_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.107029] (-) TimerEvent: {}
+[2.156717] (md_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.158848] (md_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.207201] (-) TimerEvent: {}
+[2.295062] (md_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.307279] (-) TimerEvent: {}
+[2.325281] (md_controller) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/usr/local/share/serial/cmake)\n'}
+[2.332661] (md_controller) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.407497] (-) TimerEvent: {}
+[2.508169] (-) TimerEvent: {}
+[2.541626] (md_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.576213] (md_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.608298] (-) TimerEvent: {}
+[2.708927] (-) TimerEvent: {}
+[2.763271] (md_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.763981] (md_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/retina/md_ws/src/MD_controller_ROS2/md_controller/include\n'}
+[2.764423] (md_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.765361] (md_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.766503] (md_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.767542] (md_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.770429] (md_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.770638] (md_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.771311] (md_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.774635] (md_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.807421] (md_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.809007] (-) TimerEvent: {}
+[2.813005] (md_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller\n'}
+[2.845511] (md_controller) CommandEnded: {'returncode': 0}
+[2.846582] (md_controller) JobProgress: {'identifier': 'md_controller', 'progress': 'build'}
+[2.846669] (md_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller', '--', '-j6', '-l6'], 'cwd': '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller', 'env': OrderedDict([('SSH_CLIENT', '192.168.0.3 55158 22'), ('USER', 'retina'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/retina'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/retina/md_ws/src'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.41.101'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/retina/.oh-my-zsh'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('FLEET_WORKSPACE_ID', '2bkp7i1p42v5l0438hk5'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/retina/md_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'retina'), ('WINDOWID', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'Jetbrains.Fleet'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('INTELLIJ_TERMINAL_COMMAND_BLOCKS', '1'), ('ALACRITTY_WINDOW_ID', '0'), ('PWD', '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller'), ('SSH_CONNECTION', '192.168.0.3 55158 192.168.0.108 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.909231] (-) TimerEvent: {}
+[2.955522] (md_controller) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/md_controller.dir/src/com.cpp.o\x1b[0m\n'}
+[2.960860] (md_controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/md_controller.dir/src/md_controller.cpp.o\x1b[0m\n'}
+[3.009597] (-) TimerEvent: {}
+[3.110279] (-) TimerEvent: {}
+[3.210951] (-) TimerEvent: {}
+[3.311628] (-) TimerEvent: {}
+[3.412346] (-) TimerEvent: {}
+[3.513014] (-) TimerEvent: {}
+[3.613718] (-) TimerEvent: {}
+[3.714416] (-) TimerEvent: {}
+[3.815146] (-) TimerEvent: {}
+[3.915869] (-) TimerEvent: {}
+[4.016614] (-) TimerEvent: {}
+[4.117337] (-) TimerEvent: {}
+[4.218077] (-) TimerEvent: {}
+[4.318806] (-) TimerEvent: {}
+[4.419545] (-) TimerEvent: {}
+[4.520264] (-) TimerEvent: {}
+[4.621022] (-) TimerEvent: {}
+[4.721795] (-) TimerEvent: {}
+[4.822555] (-) TimerEvent: {}
+[4.923297] (-) TimerEvent: {}
+[5.024004] (-) TimerEvent: {}
+[5.124777] (-) TimerEvent: {}
+[5.226381] (-) TimerEvent: {}
+[5.327122] (-) TimerEvent: {}
+[5.427837] (-) TimerEvent: {}
+[5.528573] (-) TimerEvent: {}
+[5.629281] (-) TimerEvent: {}
+[5.730030] (-) TimerEvent: {}
+[5.830771] (-) TimerEvent: {}
+[5.931504] (-) TimerEvent: {}
+[6.032262] (-) TimerEvent: {}
+[6.132997] (-) TimerEvent: {}
+[6.233713] (-) TimerEvent: {}
+[6.334436] (-) TimerEvent: {}
+[6.435156] (-) TimerEvent: {}
+[6.535878] (-) TimerEvent: {}
+[6.636678] (-) TimerEvent: {}
+[6.737413] (-) TimerEvent: {}
+[6.838107] (-) TimerEvent: {}
+[6.938860] (-) TimerEvent: {}
+[7.039594] (-) TimerEvent: {}
+[7.140341] (-) TimerEvent: {}
+[7.241080] (-) TimerEvent: {}
+[7.341786] (-) TimerEvent: {}
+[7.442506] (-) TimerEvent: {}
+[7.543235] (-) TimerEvent: {}
+[7.644009] (-) TimerEvent: {}
+[7.744763] (-) TimerEvent: {}
+[7.845473] (-) TimerEvent: {}
+[7.946215] (-) TimerEvent: {}
+[8.046986] (-) TimerEvent: {}
+[8.149549] (-) TimerEvent: {}
+[8.250294] (-) TimerEvent: {}
+[8.351038] (-) TimerEvent: {}
+[8.444886] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint PutMdData(BYTE, BYTE, int, int*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.445705] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:53:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KiData\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.445932] (md_controller) StderrLine: {'line': b'   53 |     IByte \x1b[01;35m\x1b[KiData\x1b[m\x1b[K;\n'}
+[8.446298] (md_controller) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.446486] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint MdReceiveProc()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.446639] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KbyRcvRMID\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.446793] (md_controller) StderrLine: {'line': b'  137 |     BYTE \x1b[01;35m\x1b[KbyRcvRMID\x1b[m\x1b[K, byRcvTMID, byRcvID, byRcvPID, byRcvDataSize;\n'}
+[8.446937] (md_controller) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.447097] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KbyRcvTMID\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.447242] (md_controller) StderrLine: {'line': b'  137 |     BYTE byRcvRMID, \x1b[01;35m\x1b[KbyRcvTMID\x1b[m\x1b[K, byRcvID, byRcvPID, byRcvDataSize;\n'}
+[8.447376] (md_controller) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.447505] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KbyRcvID\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.447639] (md_controller) StderrLine: {'line': b'  137 |     BYTE byRcvRMID, byRcvTMID, \x1b[01;35m\x1b[KbyRcvID\x1b[m\x1b[K, byRcvPID, byRcvDataSize;\n'}
+[8.447763] (md_controller) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.447890] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KbyRcvDataSize\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.448023] (md_controller) StderrLine: {'line': b'  137 |     BYTE byRcvRMID, byRcvTMID, byRcvID, byRcvPID, \x1b[01;35m\x1b[KbyRcvDataSize\x1b[m\x1b[K;\n'}
+[8.448190] (md_controller) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.448328] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint AnalyzeReceivedData(BYTE*, BYTE)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.448461] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:196:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around comparison in operand of \xe2\x80\x98\x1b[01m\x1b[K|\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.448593] (md_controller) StderrLine: {'line': b'  196 |                 if(\x1b[01;35m\x1b[KbyArray[j] == 1\x1b[m\x1b[K | byArray[j] == 2)\n'}
+[8.448723] (md_controller) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.451101] (-) TimerEvent: {}
+[8.551621] (-) TimerEvent: {}
+[8.652383] (-) TimerEvent: {}
+[8.753092] (-) TimerEvent: {}
+[8.778578] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/md_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.779106] (md_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/md_controller.cpp:97:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.779307] (md_controller) StderrLine: {'line': b'   97 |                     auto \x1b[01;35m\x1b[Kend\x1b[m\x1b[K = std::chrono::high_resolution_clock::now();\n'}
+[8.779465] (md_controller) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.853526] (-) TimerEvent: {}
+[8.954242] (-) TimerEvent: {}
+[9.054965] (-) TimerEvent: {}
+[9.155807] (-) TimerEvent: {}
+[9.256571] (-) TimerEvent: {}
+[9.357304] (-) TimerEvent: {}
+[9.458046] (-) TimerEvent: {}
+[9.558763] (-) TimerEvent: {}
+[9.659503] (-) TimerEvent: {}
+[9.760222] (-) TimerEvent: {}
+[9.860928] (-) TimerEvent: {}
+[9.961603] (-) TimerEvent: {}
+[10.062297] (-) TimerEvent: {}
+[10.163132] (-) TimerEvent: {}
+[10.263854] (-) TimerEvent: {}
+[10.364657] (-) TimerEvent: {}
+[10.465338] (-) TimerEvent: {}
+[10.566102] (-) TimerEvent: {}
+[10.666917] (-) TimerEvent: {}
+[10.767577] (-) TimerEvent: {}
+[10.868251] (-) TimerEvent: {}
+[10.968918] (-) TimerEvent: {}
+[11.069713] (-) TimerEvent: {}
+[11.170393] (-) TimerEvent: {}
+[11.271055] (-) TimerEvent: {}
+[11.371742] (-) TimerEvent: {}
+[11.472576] (-) TimerEvent: {}
+[11.573285] (-) TimerEvent: {}
+[11.674225] (-) TimerEvent: {}
+[11.774915] (-) TimerEvent: {}
+[11.875968] (-) TimerEvent: {}
+[11.976658] (-) TimerEvent: {}
+[12.077319] (-) TimerEvent: {}
+[12.177988] (-) TimerEvent: {}
+[12.278739] (-) TimerEvent: {}
+[12.379530] (-) TimerEvent: {}
+[12.480267] (-) TimerEvent: {}
+[12.581103] (-) TimerEvent: {}
+[12.681908] (-) TimerEvent: {}
+[12.782582] (-) TimerEvent: {}
+[12.883311] (-) TimerEvent: {}
+[12.983985] (-) TimerEvent: {}
+[13.084708] (-) TimerEvent: {}
+[13.185476] (-) TimerEvent: {}
+[13.286156] (-) TimerEvent: {}
+[13.386828] (-) TimerEvent: {}
+[13.487491] (-) TimerEvent: {}
+[13.588410] (-) TimerEvent: {}
+[13.689118] (-) TimerEvent: {}
+[13.789803] (-) TimerEvent: {}
+[13.890488] (-) TimerEvent: {}
+[13.991232] (-) TimerEvent: {}
+[14.092070] (-) TimerEvent: {}
+[14.192743] (-) TimerEvent: {}
+[14.293519] (-) TimerEvent: {}
+[14.394191] (-) TimerEvent: {}
+[14.494937] (-) TimerEvent: {}
+[14.595765] (-) TimerEvent: {}
+[14.696461] (-) TimerEvent: {}
+[14.797114] (-) TimerEvent: {}
+[14.897789] (-) TimerEvent: {}
+[14.998452] (-) TimerEvent: {}
+[15.099126] (-) TimerEvent: {}
+[15.199777] (-) TimerEvent: {}
+[15.300481] (-) TimerEvent: {}
+[15.401227] (-) TimerEvent: {}
+[15.501940] (-) TimerEvent: {}
+[15.602622] (-) TimerEvent: {}
+[15.703296] (-) TimerEvent: {}
+[15.804193] (-) TimerEvent: {}
+[15.904874] (-) TimerEvent: {}
+[16.005559] (-) TimerEvent: {}
+[16.106219] (-) TimerEvent: {}
+[16.206898] (-) TimerEvent: {}
+[16.307687] (-) TimerEvent: {}
+[16.408401] (-) TimerEvent: {}
+[16.509060] (-) TimerEvent: {}
+[16.609730] (-) TimerEvent: {}
+[16.710409] (-) TimerEvent: {}
+[16.811127] (-) TimerEvent: {}
+[16.911795] (-) TimerEvent: {}
+[17.012510] (-) TimerEvent: {}
+[17.113325] (-) TimerEvent: {}
+[17.214286] (-) TimerEvent: {}
+[17.314957] (-) TimerEvent: {}
+[17.415632] (-) TimerEvent: {}
+[17.516669] (-) TimerEvent: {}
+[17.617457] (-) TimerEvent: {}
+[17.718160] (-) TimerEvent: {}
+[17.818885] (-) TimerEvent: {}
+[17.919720] (-) TimerEvent: {}
+[18.020526] (-) TimerEvent: {}
+[18.121206] (-) TimerEvent: {}
+[18.221888] (-) TimerEvent: {}
+[18.322566] (-) TimerEvent: {}
+[18.423501] (-) TimerEvent: {}
+[18.524183] (-) TimerEvent: {}
+[18.624845] (-) TimerEvent: {}
+[18.725531] (-) TimerEvent: {}
+[18.826488] (-) TimerEvent: {}
+[18.927148] (-) TimerEvent: {}
+[19.027808] (-) TimerEvent: {}
+[19.128492] (-) TimerEvent: {}
+[19.229240] (-) TimerEvent: {}
+[19.329928] (-) TimerEvent: {}
+[19.430598] (-) TimerEvent: {}
+[19.531273] (-) TimerEvent: {}
+[19.631949] (-) TimerEvent: {}
+[19.732710] (-) TimerEvent: {}
+[19.833400] (-) TimerEvent: {}
+[19.934060] (-) TimerEvent: {}
+[20.034726] (-) TimerEvent: {}
+[20.135406] (-) TimerEvent: {}
+[20.236112] (-) TimerEvent: {}
+[20.336783] (-) TimerEvent: {}
+[20.437469] (-) TimerEvent: {}
+[20.538170] (-) TimerEvent: {}
+[20.638860] (-) TimerEvent: {}
+[20.739524] (-) TimerEvent: {}
+[20.840252] (-) TimerEvent: {}
+[20.941062] (-) TimerEvent: {}
+[21.041908] (-) TimerEvent: {}
+[21.142612] (-) TimerEvent: {}
+[21.243275] (-) TimerEvent: {}
+[21.343926] (-) TimerEvent: {}
+[21.444616] (-) TimerEvent: {}
+[21.545415] (-) TimerEvent: {}
+[21.646117] (-) TimerEvent: {}
+[21.694277] (md_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable md_controller\x1b[0m\n'}
+[21.746298] (-) TimerEvent: {}
+[21.847178] (-) TimerEvent: {}
+[21.947889] (-) TimerEvent: {}
+[22.048620] (-) TimerEvent: {}
+[22.149314] (-) TimerEvent: {}
+[22.249997] (-) TimerEvent: {}
+[22.350669] (-) TimerEvent: {}
+[22.451494] (-) TimerEvent: {}
+[22.552236] (-) TimerEvent: {}
+[22.652984] (-) TimerEvent: {}
+[22.686814] (md_controller) StdoutLine: {'line': b'[100%] Built target md_controller\n'}
+[22.711107] (md_controller) CommandEnded: {'returncode': 0}
+[22.756056] (-) TimerEvent: {}
+[22.761573] (md_controller) JobProgress: {'identifier': 'md_controller', 'progress': 'install'}
+[22.779071] (md_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller'], 'cwd': '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller', 'env': OrderedDict([('SSH_CLIENT', '192.168.0.3 55158 22'), ('USER', 'retina'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/retina'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/retina/md_ws/src'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '1.41.101'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/retina/.oh-my-zsh'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('FLEET_WORKSPACE_ID', '2bkp7i1p42v5l0438hk5'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/retina/md_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'retina'), ('WINDOWID', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'Jetbrains.Fleet'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('INTELLIJ_TERMINAL_COMMAND_BLOCKS', '1'), ('ALACRITTY_WINDOW_ID', '0'), ('PWD', '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller'), ('SSH_CONNECTION', '192.168.0.3 55158 192.168.0.108 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.793501] (md_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.794095] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/launch\n'}
+[22.794284] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/launch/md_controller.launch.py\n'}
+[22.794654] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/rviz\n'}
+[22.794885] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/rviz/md.rviz\n'}
+[22.795203] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include\n'}
+[22.795377] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include/md_controller\n'}
+[22.795607] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include/md_controller/com.hpp\n'}
+[22.795865] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/lib/md_controller/md_controller\n'}
+[22.806727] (md_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/lib/md_controller/md_controller" to ""\n'}
+[22.807370] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/package_run_dependencies/md_controller\n'}
+[22.807883] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/parent_prefix_path/md_controller\n'}
+[22.808526] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/ament_prefix_path.sh\n'}
+[22.809422] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/ament_prefix_path.dsv\n'}
+[22.810486] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/path.sh\n'}
+[22.810979] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/path.dsv\n'}
+[22.811957] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.bash\n'}
+[22.812969] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.sh\n'}
+[22.814164] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.zsh\n'}
+[22.814605] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.dsv\n'}
+[22.815018] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/package.dsv\n'}
+[22.815191] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/packages/md_controller\n'}
+[22.815351] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/cmake/md_controllerConfig.cmake\n'}
+[22.815500] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/cmake/md_controllerConfig-version.cmake\n'}
+[22.815991] (md_controller) StdoutLine: {'line': b'-- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/package.xml\n'}
+[22.818481] (md_controller) CommandEnded: {'returncode': 0}
+[22.856252] (-) TimerEvent: {}
+[22.941967] (md_controller) JobEnded: {'identifier': 'md_controller', 'rc': 0}
+[22.947898] (-) EventReactorShutdown: {}

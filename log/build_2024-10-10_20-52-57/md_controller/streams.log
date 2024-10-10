@@ -1,0 +1,107 @@
+[0.020s] Invoking command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/retina/md_ws/src/MD_controller_ROS2/md_controller -DCMAKE_INSTALL_PREFIX=/home/retina/md_ws/src/MD_controller_ROS2/install/md_controller
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.327s] -- The CXX compiler identification is GNU 11.4.0
+[0.344s] -- Detecting C compiler ABI info
+[0.521s] -- Detecting C compiler ABI info - done
+[0.535s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.536s] -- Detecting C compile features
+[0.537s] -- Detecting C compile features - done
+[0.544s] -- Detecting CXX compiler ABI info
+[0.701s] -- Detecting CXX compiler ABI info - done
+[0.719s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.720s] -- Detecting CXX compile features
+[0.720s] -- Detecting CXX compile features - done
+[0.729s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.065s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.250s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.345s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.355s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.373s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.398s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.524s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.529s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.684s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.740s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.813s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.830s] -- Looking for pthread.h
+[2.014s] -- Looking for pthread.h - found
+[2.015s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.155s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.157s] -- Found Threads: TRUE  
+[2.294s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.324s] -- Found serial: 1.2.1 (/usr/local/share/serial/cmake)
+[2.331s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.540s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.575s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.762s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.763s] -- Configured cppcheck include dirs: /home/retina/md_ws/src/MD_controller_ROS2/md_controller/include
+[2.763s] -- Configured cppcheck exclude dirs and/or files: 
+[2.764s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.765s] -- Added test 'lint_cmake' to check CMake code style
+[2.766s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.769s] -- Added test 'uncrustify' to check C / C++ code style
+[2.769s] -- Configured uncrustify additional arguments: 
+[2.770s] -- Added test 'xmllint' to check XML markup files
+[2.773s] -- Configuring done
+[2.806s] -- Generating done
+[2.812s] -- Build files have been written to: /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller
+[2.844s] Invoked command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/retina/md_ws/src/MD_controller_ROS2/md_controller -DCMAKE_INSTALL_PREFIX=/home/retina/md_ws/src/MD_controller_ROS2/install/md_controller
+[2.845s] Invoking command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller -- -j6 -l6
+[2.954s] [ 33%] [32mBuilding CXX object CMakeFiles/md_controller.dir/src/com.cpp.o[0m
+[2.960s] [ 66%] [32mBuilding CXX object CMakeFiles/md_controller.dir/src/md_controller.cpp.o[0m
+[8.444s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:[m[K In function ‘[01m[Kint PutMdData(BYTE, BYTE, int, int*)[m[K’:
+[8.444s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:53:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KiData[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[8.445s]    53 |     IByte [01;35m[KiData[m[K;
+[8.445s]       |           [01;35m[K^~~~~[m[K
+[8.445s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:[m[K In function ‘[01m[Kint MdReceiveProc()[m[K’:
+[8.445s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbyRcvRMID[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[8.445s]   137 |     BYTE [01;35m[KbyRcvRMID[m[K, byRcvTMID, byRcvID, byRcvPID, byRcvDataSize;
+[8.445s]       |          [01;35m[K^~~~~~~~~[m[K
+[8.445s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbyRcvTMID[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[8.446s]   137 |     BYTE byRcvRMID, [01;35m[KbyRcvTMID[m[K, byRcvID, byRcvPID, byRcvDataSize;
+[8.446s]       |                     [01;35m[K^~~~~~~~~[m[K
+[8.446s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:32:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbyRcvID[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[8.446s]   137 |     BYTE byRcvRMID, byRcvTMID, [01;35m[KbyRcvID[m[K, byRcvPID, byRcvDataSize;
+[8.446s]       |                                [01;35m[K^~~~~~~[m[K
+[8.446s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:137:51:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbyRcvDataSize[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[8.446s]   137 |     BYTE byRcvRMID, byRcvTMID, byRcvID, byRcvPID, [01;35m[KbyRcvDataSize[m[K;
+[8.447s]       |                                                   [01;35m[K^~~~~~~~~~~~~[m[K
+[8.447s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:[m[K In function ‘[01m[Kint AnalyzeReceivedData(BYTE*, BYTE)[m[K’:
+[8.447s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/com.cpp:196:31:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around comparison in operand of ‘[01m[K|[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[8.447s]   196 |                 if([01;35m[KbyArray[j] == 1[m[K | byArray[j] == 2)
+[8.447s]       |                    [01;35m[K~~~~~~~~~~~^~~~[m[K
+[8.777s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/md_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[8.778s] [01m[K/home/retina/md_ws/src/MD_controller_ROS2/md_controller/src/md_controller.cpp:97:26:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kend[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[8.778s]    97 |                     auto [01;35m[Kend[m[K = std::chrono::high_resolution_clock::now();
+[8.778s]       |                          [01;35m[K^~~[m[K
+[21.693s] [100%] [32m[1mLinking CXX executable md_controller[0m
+[22.685s] [100%] Built target md_controller
+[22.710s] Invoked command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller -- -j6 -l6
+[22.779s] Invoking command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller
+[22.792s] -- Install configuration: ""
+[22.793s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/launch
+[22.793s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/launch/md_controller.launch.py
+[22.793s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/rviz
+[22.793s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/rviz/md.rviz
+[22.794s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include
+[22.794s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include/md_controller
+[22.794s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/include/md_controller/com.hpp
+[22.794s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/lib/md_controller/md_controller
+[22.805s] -- Set runtime path of "/home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/lib/md_controller/md_controller" to ""
+[22.806s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/package_run_dependencies/md_controller
+[22.807s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/parent_prefix_path/md_controller
+[22.807s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/ament_prefix_path.sh
+[22.808s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/ament_prefix_path.dsv
+[22.809s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/path.sh
+[22.810s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/environment/path.dsv
+[22.811s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.bash
+[22.812s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.sh
+[22.813s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.zsh
+[22.813s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/local_setup.dsv
+[22.813s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/package.dsv
+[22.814s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/ament_index/resource_index/packages/md_controller
+[22.814s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/cmake/md_controllerConfig.cmake
+[22.814s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/cmake/md_controllerConfig-version.cmake
+[22.815s] -- Installing: /home/retina/md_ws/src/MD_controller_ROS2/install/md_controller/share/md_controller/package.xml
+[22.818s] Invoked command in '/home/retina/md_ws/src/MD_controller_ROS2/build/md_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/retina/md_ws/src/MD_controller_ROS2/build/md_controller

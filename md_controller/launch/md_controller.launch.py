@@ -38,7 +38,7 @@ def generate_launch_description():
       "MDT":183,
       "Port":"/dev/ttyUSB0",
       "Baudrate":57600,
-      "ID":2,
+      "ID":1,
       "GearRatio":25,
       "poles":8
     }],

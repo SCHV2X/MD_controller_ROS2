@@ -1,0 +1,3 @@
+[console_scripts]
+md_teleop_key_node = md_teleop.md_teleop_key:main
+
