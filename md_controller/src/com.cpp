@@ -126,6 +126,30 @@ int PutMdData(BYTE byPID, BYTE byMID, int id_num, int nArray[])
             // printf("send data : ");
             // for(int k = 0; k < byPidDataSize; k++) printf("%d ", Com.bySndBuf[k]); cout << endl;
             break;
+
+        case PID_PNT_VEL_CMD:
+
+            byDataSize    = 7;
+            byPidDataSize = 13;
+            byTempDataSum = 0;
+
+            Com.bySndBuf[4]  = byDataSize;
+            Com.bySndBuf[5]  = 1;
+            Com.bySndBuf[6]  = nArray[0];
+            Com.bySndBuf[7]  = nArray[1];
+            Com.bySndBuf[8]  = 1;
+            Com.bySndBuf[9]  = nArray[2];
+            Com.bySndBuf[10]  = nArray[3];
+            Com.bySndBuf[11]  = 0;
+
+
+            for(i = 0; i < (byPidDataSize-1); i++) byTempDataSum += Com.bySndBuf[i];
+            Com.bySndBuf[byPidDataSize-1] = ~(byTempDataSum) + 1; //check sum
+
+            ser.write(Com.bySndBuf, byPidDataSize);
+            printf("send data : ");
+            for(int k = 0; k < byPidDataSize; k++) printf("%d ", Com.bySndBuf[k]); cout << endl;
+            break;
     }
     
     return SUCCESS;

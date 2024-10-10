@@ -11,6 +11,7 @@
 #include <std_msgs/msg/float32.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include "std_msgs/msg/int16_multi_array.hpp"
+#include "std_msgs/msg/int32_multi_array.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/quaternion.hpp"
