@@ -6,7 +6,7 @@ from std_msgs.msg import Int32MultiArray
 from getkey import getkey
 
 MAX_VEL = 1000
-VEL_STEP_SIZE = 10
+VEL_STEP_SIZE = 5
 
 msg = """
 -------------------------------------------------
@@ -25,25 +25,40 @@ class TeleopKey(Node):
         self.cmd_rpm_pub = self.create_publisher(Int32MultiArray, "/cmd_rpm", qos_profile)
         signal.signal(signal.SIGINT, self.signal_handler) #callback if ctrl+C signal is input.
 
-        target_rpm = 0
+        target_rpm1 = 0
+        target_rpm2 = 0
         os.system('clear')
         print(msg)
 
         while(1):
             key = getkey()
-            if key == "[":
-                target_rpm = self.CheckLRPMLimit(target_rpm - VEL_STEP_SIZE)
+            if key == "w":
+                target_rpm1 = self.CheckLRPMLimit(target_rpm1 + VEL_STEP_SIZE)
+                target_rpm2 = self.CheckLRPMLimit(target_rpm2 + VEL_STEP_SIZE)
                 os.system('clear')
                 print(msg)
-                print("target_RPM = ", target_rpm)
-            elif key == "]":
-                target_rpm = self.CheckLRPMLimit(target_rpm + VEL_STEP_SIZE)
+                print("target_RPM = ", target_rpm1, ", ", target_rpm2)
+            elif key == "s":
+                target_rpm1 = self.CheckLRPMLimit(target_rpm1 - VEL_STEP_SIZE)
+                target_rpm2 = self.CheckLRPMLimit(target_rpm2 - VEL_STEP_SIZE)
                 os.system('clear')
                 print(msg)
-                print("target_RPM = ", target_rpm)
+                print("target_RPM = ", target_rpm1, ", ", target_rpm2)
+            elif key == "a":
+                target_rpm1 = self.CheckLRPMLimit(target_rpm1 - VEL_STEP_SIZE)
+                target_rpm2 = self.CheckLRPMLimit(target_rpm2 + VEL_STEP_SIZE)
+                os.system('clear')
+                print(msg)
+                print("target_RPM = ", target_rpm1, ", ", target_rpm2)
+            elif key == "d":
+                target_rpm1 = self.CheckLRPMLimit(target_rpm1 + VEL_STEP_SIZE)
+                target_rpm2 = self.CheckLRPMLimit(target_rpm2 - VEL_STEP_SIZE)
+                os.system('clear')
+                print(msg)
+                print("target_RPM = ", target_rpm1, ", ", target_rpm2)
             
             rpm = Int32MultiArray()
-            rpm.data = [target_rpm, target_rpm]
+            rpm.data = [target_rpm1, target_rpm2]
             self.cmd_rpm_pub.publish(rpm)
     
 
