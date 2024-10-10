@@ -7,10 +7,12 @@ geometry_msgs::msg::TransformStamped odom_tf;
 sensor_msgs::msg::JointState joint_states;
 
 BYTE SendCmdRpm = OFF;
-int rpm_ = 0;
+int rpm1_ = 0;
+int rpm2_ = 0;
 
-void CmdRpmCallBack(const std_msgs::msg::Int32::SharedPtr msg) {
-    rpm_ = msg->data;
+void CmdRpmCallBack(const std_msgs::msg::Int32MultiArray::SharedPtr msg) {
+    rpm1_ = msg->data[0];
+    rpm2_ = msg->data[1];
 
     SendCmdRpm = ON;
 }
@@ -24,7 +26,7 @@ int main(int argc, char *argv[]) {
     tf2_ros::TransformBroadcaster tf_broadcaster_(node);
 
     //subscriber
-    auto rpm_sub = node->create_subscription<std_msgs::msg::Int32>("/cmd_rpm",1000, CmdRpmCallBack);
+    auto rpm_sub = node->create_subscription<std_msgs::msg::Int32MultiArray>("/cmd_rpm",1000, CmdRpmCallBack);
 
     //Motor driver settup-------------------------------------------------------------------------------
     node->declare_parameter("MDUI", 184);
@@ -46,8 +48,8 @@ int main(int argc, char *argv[]) {
     Motor.PPR       = Motor.poles*3*Motor.GearRatio;           //poles * 3(HALL U,V,W) * gear ratio
     Motor.Tick2RAD  = (360.0/Motor.PPR)*PI / 180;
 
-    IByte iData;
-    int nArray[2];
+    IByte iData1, iData2;
+    int nArray[4];
     static BYTE fgInitsetting, byCntInitStep, byCntComStep, byCnt2500us, byCntStartDelay, byCntCase[5];
     
     byCntInitStep     = 1;
@@ -104,10 +106,13 @@ int main(int argc, char *argv[]) {
 
                         if(SendCmdRpm)
                         {
-                            iData = Short2Byte(rpm_ * Motor.GearRatio); // #1,2 Wheel RPM
-                            nArray[0] = iData.byLow;
-                            nArray[1] = iData.byHigh;
-                            PutMdData(PID_VEL_CMD, Com.nIDMDT, Motor.ID, nArray);
+                            iData1 = Short2Byte(rpm1_ * Motor.GearRatio); // #1,2 Wheel RPM
+                            iData2 = Short2Byte(rpm2_ * Motor.GearRatio); // #1,2 Wheel RPM
+                            nArray[0] = iData1.byLow;
+                            nArray[1] = iData1.byHigh;
+                            nArray[2] = iData2.byLow;
+                            nArray[3] = iData2.byHigh;
+                            PutMdData(PID_PNT_VEL_CMD, Com.nIDMDT, Motor.ID, nArray);
 
                             //n대의 모터드라이버에게 동시에 main data를 요청할 경우 data를 받을 때 데이터가 섞임을 방지.
                             nArray[0] = PID_MAIN_DATA;
