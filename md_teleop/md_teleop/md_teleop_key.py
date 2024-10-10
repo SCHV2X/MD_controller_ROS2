@@ -2,7 +2,7 @@
 import rclpy
 import sys, signal, os
 from rclpy.node import Node
-from std_msgs.msg import Int32
+from std_msgs.msg import Int32MultiArray
 from getkey import getkey
 
 MAX_VEL = 1000
@@ -22,7 +22,7 @@ class TeleopKey(Node):
 
         qos_profile = rclpy.qos.QoSProfile(depth=10, reliability=rclpy.qos.ReliabilityPolicy.RELIABLE)
 
-        self.cmd_rpm_pub = self.create_publisher(Int32, "/cmd_rpm", qos_profile)
+        self.cmd_rpm_pub = self.create_publisher(Int32MultiArray, "/cmd_rpm", qos_profile)
         signal.signal(signal.SIGINT, self.signal_handler) #callback if ctrl+C signal is input.
 
         target_rpm = 0
@@ -42,14 +42,14 @@ class TeleopKey(Node):
                 print(msg)
                 print("target_RPM = ", target_rpm)
             
-            rpm = Int32()
-            rpm.data = target_rpm
+            rpm = Int32MultiArray()
+            rpm.data = [target_rpm, target_rpm]
             self.cmd_rpm_pub.publish(rpm)
     
 
     def signal_handler(self, sig, frame):
-        rpm = Int32()
-        rpm.data = 0
+        rpm = Int32MultiArray()
+        rpm.data = [0, 0]
         print("target_RPM = ", rpm.data)
 
         self.cmd_rpm_pub.publish(rpm)
